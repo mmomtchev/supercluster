@@ -374,7 +374,7 @@ function lngX(lng) {
     return lng / 360 + 0.5;
 }
 function latY(lat) {
-    const y = -(lat / 360) + 0.5;
+    const y = 0.25 - (lat / 360);
     return y < 0 ? 0 : y > 1 ? 1 : y;
 }
 
